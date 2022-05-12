@@ -38,14 +38,8 @@ module.exports = {
   networks: {
     hardhat: {
       forking: {
-        url: `https://eth-rinkeby.alchemyapi.io/v2/${ALCHEMY_KEY}`, //move key to alchemy
-        blockNumber: 9779278
+        url: `https://eth-rinkeby.alchemyapi.io/v2/${ALCHEMY_KEY}`
       }
-    },
-    localhost: {
-      chainId: 1337,
-      url: "http://127.0.0.1:7545",
-      accounts: [GANACHE_PRIVATE_KEY]
     },
     /*mainnet: {
         url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
